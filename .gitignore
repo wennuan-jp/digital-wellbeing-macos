@@ -1,0 +1,14 @@
+# Build artifacts
+build/
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+*.log
+
+# Local config / editor files
+config.json
+*.swp
+*.swo
+*~

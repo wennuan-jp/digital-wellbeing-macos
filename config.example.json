@@ -1,0 +1,35 @@
+{
+  "rules": [
+    {
+      "name": "League of Legends",
+      "mode": "hide",
+      "alwaysBlock": false,
+      "allowedWindows": [
+        { "days": ["sat", "sun"], "start": "17:00", "end": "20:00" }
+      ],
+      "allowProcesses": ["League of Legends"],
+      "targetProcesses": ["LeagueClientUx"]
+    },
+    {
+      "name": "Antigravity IDE",
+      "mode": "hide",
+      "alwaysBlock": false,
+      "allowedWindows": [
+        { "start": "14:00", "end": "17:00" }
+      ],
+      "allowProcesses": [],
+      "targetProcesses": ["/Applications/Antigravity IDE.app/Contents/MacOS/Electron"]
+    },
+    {
+      "name": "Safari",
+      "mode": "close_windows",
+      "alwaysBlock": true,
+      "allowProcesses": [],
+      "targetProcesses": ["Safari.app/Contents/MacOS/Safari"]
+    }
+  ],
+  "activePollIntervalSeconds": 0.5,
+  "idleHeartbeatSeconds": 30.0,
+  "logFile": "~/Library/Logs/lol-guard.log",
+  "maxLogBytes": 1048576
+}
